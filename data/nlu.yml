@@ -1,0 +1,58 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+- intent: deny
+  examples: |
+    - no
+- intent: affirm
+  examples: |
+    - yes
+    - ya
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - affirm
+- intent: engineer
+  examples: |
+    - i want to choose [Mechanical Engineering](field)
+    - [Civil Engineering](field)
+    - i want to enter [Chemical Engineering](field)
+- lookup: field
+    data/field.txt       
+- intent: my_location
+  examples: |
+    - i search college in [Ganeshman Singh Rd](location)
+    - [Balkumari Rd](location) college
+    - [Chyasal](location) a good college
+    - i want to learn in [Sanepa](location)
+    - [Ring Road](location)
+- lookup: location
+  examples: |
+    - Ring Road
+    - Trade Tower
+    - Ganeshman Singh Rd
+    - Balkumari Rd
+    - Chyasal
+    - Kriti Marg
+    - Sanepa
+    - Devkota Sadak
+    - Booth Marg
+    - Kupondole Road 
+    - Boudha Rd
+    - Jamal Rd 
+
